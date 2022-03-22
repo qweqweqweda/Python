@@ -1,0 +1,45 @@
+import turtle
+
+import random
+
+turtle.shape("turtle")
+
+# 마우스 좌클릭으로 이동 및 크기,색,방향 정하기
+def screenLeftClick(x, y):
+    global r, g, b
+
+    r = random.random()
+    g = random.random()
+    b = random.random()
+
+    # 크기는 2~6사이즈로 랜덤하게
+    tSize = random.randrange(2, 7)
+
+    # 각도는 0~360도까지 랜덤하게
+    tAngle = random.randrange(0, 361)
+
+    # 크기
+    turtle.shapesize(tSize)
+
+    #색상
+    turtle.color(r, g, b)
+
+    #방향
+    turtle.right(tAngle)
+
+    #좌표 이동할때 선안나타나기
+    turtle.penup()
+
+    #좌표이동
+    turtle.goto(x, y)
+
+
+    # 거북이 스탬프찍기
+    turtle.stamp()
+
+# 변수 초기값
+r, g, b = 0.0, 0.0, 0.0
+
+turtle.onscreenclick(screenLeftClick)
+
+turtle.done()
