@@ -1,39 +1,66 @@
 import turtle as t
 
 t.shape("turtle")
+#선 긋는 속도
 t.speed(0)
+#선 크기
 t.pensize(20)
 
+#원그리기
 t.circle(100)
 
+#선 안그리기
 t.up()
+#앞으로 이동하기
 t.forward(240)
+#선그리기
 t.down()
+#빨간색으로 하기
 t.pencolor("red")
+#원그리기
 t.circle(100)
 
+#선 안그리기
 t.penup()
+#뒤로 이동하기
 t.backward(480)
+#선그리기
 t.down()
+#파란색으로 하기
 t.pencolor("blue")
+#원그리기
 t.circle(100)
 
-
+#선 안그리기
 t.up()
+#앞으로 이동하기
 t.forward(20)
+#오른쪽으로 방향돌리기
 t.right(90)
+#선그리기
 t.pendown()
+#노란색으로 하기
 t.pencolor("yellow")
+#원그리기
 t.circle(100)
 
+#선 안그리기
 t.up()
+#왼쪽으로 방향돌리기
 t.left(90)
+#앞으로 이동하기
 t.forward(340)
+#오른쪽으로 방향돌리기
 t.right(90)
+#앞으로 이동하기
 t.forward(100)
+#왼쪽으로 방향돌리기
 t.left(90)
+#선그리기
 t.down()
+#초록색으로 하기
 t.pencolor("green")
+#원그리기
 t.circle(100)
 
 t.done()
